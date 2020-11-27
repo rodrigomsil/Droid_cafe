@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Sobremesas Droid"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#8B8891"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sobremesas Droid" />
+
+    <ImageView
+        android:id="@+id/imagem1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        tools:srcCompat="@drawable/donut_circle"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imagem2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/imagem1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagem1"
+        tools:srcCompat="@drawable/icecream_circle"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imagem3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/imagem2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagem2"
+        tools:srcCompat="@drawable/froyo_circle"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/descricao1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:textColor="#8B8891"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/imagem1"
+        app:layout_constraintTop_toTopOf="@+id/imagem1"
+        tools:text="Descrição do Produto" />
+
+    <TextView
+        android:id="@+id/descricao2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:textColor="#8B8891"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/imagem2"
+        app:layout_constraintTop_toTopOf="@+id/imagem2"
+        tools:text="Descrição do Produto" />
+
+    <TextView
+        android:id="@+id/descricao3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:textColor="#8B8891"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/imagem3"
+        app:layout_constraintTop_toTopOf="@+id/imagem3"
+        tools:text="Descrição do Produto" />
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/imagem2"
+        app:layout_constraintTop_toBottomOf="@+id/descricao2" />
+
+    <TextView
+        android:id="@+id/total3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/imagem3"
+        app:layout_constraintTop_toBottomOf="@+id/descricao3" />
+
+    <TextView
+        android:id="@+id/total1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/imagem1"
+        app:layout_constraintTop_toBottomOf="@+id/descricao1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
